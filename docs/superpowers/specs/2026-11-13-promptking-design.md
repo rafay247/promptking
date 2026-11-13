@@ -55,10 +55,12 @@ promptKing/                          → github.com/rafay247/promptking
 ├── hooks/
 │   ├── hooks.json                   registers the UserPromptSubmit hook
 │   └── always-on.sh                 hook script
+├── tests/test_hook.sh               hook tests
 ├── evals/
-│   ├── prompts/                     ~12 rough test prompts
-│   ├── rubric.md                    judging criteria
-│   ├── run.sh                       runs baseline vs skill, then blind judging
+│   ├── cases.json                   the test prompts and expected behaviors
+│   ├── judge_prompt.md              judging rubric
+│   ├── run.py                       runs baseline vs skill, then blind judging
+│   ├── test_run.py                  unit tests for the runner
 │   └── results/                     raw outputs + summary (committed)
 ├── docs/superpowers/specs/          this spec
 ├── README.md
@@ -91,14 +93,14 @@ Each domain file describes what separates an expert result from an average one i
 ### 3.5 Always-on mode
 
 - **State:** a flag file at `~/.claude/promptking/always-on`. `/promptking on` creates it, `/promptking off` removes it.
-- **Hook:** `UserPromptSubmit` runs `always-on.sh`. If the flag file exists, and the prompt is not a slash command and not trivial (e.g. "ok", "thanks", very short acknowledgements), it emits additional context telling Claude to apply the PromptKing skill. Otherwise it emits nothing.
+- **Hook:** `UserPromptSubmit` runs `always-on.sh`. If the flag file exists, it emits additional context telling Claude to apply the PromptKing skill unless the message is a slash command, a short acknowledgement, or an answer to a question Claude just asked. Otherwise it emits nothing. (Skipping is decided by Claude from that wording, so the hook needs no JSON parsing.)
 - **Portability:** POSIX shell with no dependencies beyond standard tools. If the hook fails, the user's message goes through unmodified (fail open).
 
 ## 4. Error handling
 
 - Missing or unreadable reference file → continue with SKILL.md alone; never block the response.
 - Hook errors → fail open, no added context, no user-visible error.
-- Ambiguity that cannot be resolved by asking (e.g. non-interactive run) → proceed on the most likely interpretation and state it in the `Assumed:` line.
+- Asking means replying with the questions (each with a suggested default) and stopping; this works the same in interactive and headless runs.
 
 ## 5. Evaluation
 
