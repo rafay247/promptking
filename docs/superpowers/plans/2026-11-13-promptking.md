@@ -18,7 +18,7 @@
 - Every technique in `references/` must trace to a source in `docs/research-notes.md` (Anthropic, OpenAI, Google, DAIR.AI).
 - Avoid outdated advice: no forced `<thinking>` blocks for reasoning models, no blanket temperature rules, no ALL-CAPS emphasis, careful use of few-shot.
 - Hook must fail open and use no dependencies beyond POSIX `sh`.
-- Flag file path: `${CLAUDE_CONFIG_DIR:-$HOME/.claude}/promptking/always-on`.
+- Flag file path: `${XDG_CONFIG_HOME:-$HOME/.config}/promptking/always-on` (changed during Task 5: `~/.claude` is a guarded path, so writes there were blocked).
 - `SKILL.md` stays under ~200 lines; detail goes in `references/`.
 - License: MIT, copyright "Rafay Shaikh".
 

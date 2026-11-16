@@ -92,7 +92,7 @@ Each domain file describes what separates an expert result from an average one i
 
 ### 3.5 Always-on mode
 
-- **State:** a flag file at `~/.claude/promptking/always-on`. `/promptking on` creates it, `/promptking off` removes it.
+- **State:** a flag file at `${XDG_CONFIG_HOME:-~/.config}/promptking/always-on` (outside `~/.claude`, which Claude Code guards as a sensitive path). `/promptking on` creates it, `/promptking off` removes it.
 - **Hook:** `UserPromptSubmit` runs `always-on.sh`. If the flag file exists, it emits additional context telling Claude to apply the PromptKing skill unless the message is a slash command, a short acknowledgement, or an answer to a question Claude just asked. Otherwise it emits nothing. (Skipping is decided by Claude from that wording, so the hook needs no JSON parsing.)
 - **Portability:** POSIX shell with no dependencies beyond standard tools. If the hook fails, the user's message goes through unmodified (fail open).
 
