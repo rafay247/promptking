@@ -16,6 +16,14 @@ class CommandTests(unittest.TestCase):
         self.assertEqual(cmd[cmd.index("--model") + 1], "opus")
         self.assertEqual(cmd[-1], "/promptking hello")
 
+    def test_all_cmds_block_file_writing_tools(self):
+        # Headless runs can't approve permission prompts; answers must come back inline.
+        # Must be a single `--flag=value` token: the option is variadic and a
+        # separate value token would make it swallow the prompt as a tool name.
+        for cmd in (run.build_baseline_cmd("x"), run.build_skill_cmd("x", "/r"), run.build_judge_cmd("x")):
+            self.assertIn("--disallowedTools=Write,Edit,NotebookEdit", cmd)
+            self.assertNotIn("--disallowedTools", cmd)
+
     def test_judge_cmd_disables_skills(self):
         self.assertIn("--disable-slash-commands", run.build_judge_cmd("x"))
 

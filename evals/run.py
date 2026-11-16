@@ -21,7 +21,11 @@ LEAK_MARKERS = ["Real goal", "Expert lens", "Quality bar", "Decode →", "<brief
 
 
 def _base(model):
-    cmd = ["claude", "-p", "--setting-sources", "project"]
+    # File-writing tools are blocked: headless runs can't approve permission
+    # prompts, so the deliverable must come back inline for judging.
+    # Single-token `--flag=value` form: the option is variadic and would
+    # otherwise swallow the prompt argument as another tool name.
+    cmd = ["claude", "-p", "--setting-sources", "project", "--disallowedTools=Write,Edit,NotebookEdit"]
     if model:
         cmd += ["--model", model]
     return cmd
