@@ -1,0 +1,10 @@
+{
+  "name": "promptking",
+  "description": "Turns rough requests into expert-quality results: silently builds an expert brief, executes it, and delivers only the finished work.",
+  "version": "1.0.0",
+  "author": { "name": "Rafay Shaikh", "url": "https://github.com/rafay247" },
+  "homepage": "https://github.com/rafay247/promptking",
+  "repository": "https://github.com/rafay247/promptking",
+  "license": "MIT",
+  "keywords": ["prompt-engineering", "context-engineering", "skills", "productivity", "claude-code"]
+}

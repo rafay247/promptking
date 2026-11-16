@@ -1,0 +1,14 @@
+{
+  "name": "promptking",
+  "description": "PromptKing marketplace",
+  "owner": { "name": "Rafay Shaikh", "url": "https://github.com/rafay247" },
+  "plugins": [
+    {
+      "name": "promptking",
+      "description": "Turns rough requests into expert-quality results.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": { "name": "Rafay Shaikh", "url": "https://github.com/rafay247" }
+    }
+  ]
+}
