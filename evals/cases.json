@@ -1,0 +1,15 @@
+[
+  {"id": "code-email-validate", "category": "code", "prompt": "write a function to validate emails in js", "expect": {"asks": false}},
+  {"id": "code-slow-api", "category": "code", "prompt": "my node api is slow when i fetch users with their posts. how do i fix it", "expect": {"asks": false}},
+  {"id": "code-pg-backup", "category": "code", "prompt": "bash script to backup my postgres db every night", "expect": {"asks": false}},
+  {"id": "writing-linkedin-job", "category": "writing", "prompt": "write a linkedin post that i got a new job as backend developer", "expect": {"asks": false}},
+  {"id": "writing-late-email", "category": "writing", "prompt": "email to client that the project will be 2 weeks late", "expect": {"asks": false}},
+  {"id": "writing-readme", "category": "writing", "prompt": "write readme for my todo app made with react and firebase", "expect": {"asks": false}},
+  {"id": "analysis-pg-vs-mongo", "category": "analysis", "prompt": "postgres or mongodb for my app?", "expect": {"asks": false}},
+  {"id": "analysis-jwt", "category": "analysis", "prompt": "explain how jwt works", "expect": {"asks": false}},
+  {"id": "creative-cab-names", "category": "creative", "prompt": "name ideas for my cab booking app", "expect": {"asks": false}},
+  {"id": "creative-landing-copy", "category": "creative", "prompt": "landing page headline and copy for ai resume builder", "expect": {"asks": false}},
+  {"id": "prompt-meeting-summary", "category": "prompt", "prompt": "write a prompt for chatgpt to summarize my meeting notes", "expect": {"asks": false}},
+  {"id": "ambiguous-proposal", "category": "ambiguous", "prompt": "write a proposal", "expect": {"asks": true}},
+  {"id": "trivial-percent", "category": "trivial", "prompt": "what is 15% of 240", "expect": {"asks": false, "max_chars": 300}}
+]
