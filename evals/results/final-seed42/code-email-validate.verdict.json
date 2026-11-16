@@ -1,0 +1,15 @@
+{
+  "id": "code-email-validate",
+  "category": "code",
+  "winner": "skill",
+  "reason": "Both give similar quality regex validators with length checks and caveats about deliverability. Response A's regex is more correct (rejects 'user@example' without TLD and 'user..name@example.com'), and its test suite demonstrates correctness explicitly; Response B's simpler regex would actually pass 'a@b' as true in its own example comment is wrong since '[^\\s@]+\\.[^\\s@]+' requires a dot after @, but B's domain label check could mishandle edge cases less thoroughly than A's dedicated consecutive-dot and no-TLD checks. A also adds practical guidance on native HTML validation.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give similar quality regex validators with length checks and caveats about deliverability. Response A's regex is more correct (rejects 'user@example' without TLD and 'user..name@example.com'), and its test suite demonstrates correctness explicitly; Response B's simpler regex would actually pass 'a@b' as true in its own example comment is wrong since '[^\\s@]+\\.[^\\s@]+' requires a dot after @, but B's domain label check could mishandle edge cases less thoroughly than A's dedicated consecutive-dot and no-TLD checks. A also adds practical guidance on native HTML validation.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

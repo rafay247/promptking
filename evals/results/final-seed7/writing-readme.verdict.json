@@ -1,0 +1,15 @@
+{
+  "id": "writing-readme",
+  "category": "writing",
+  "winner": "skill",
+  "reason": "Response A delivers a complete, usable README immediately, making reasonable but clearly-flagged assumptions (Vite, Google auth, Firestore rules) that the user can easily edit; this fits the low-stakes, generic nature of the request. Response B refuses to produce anything, which would be ideal if the request implied code inspection, but the user's phrasing ('my todo app') is a generic README request that most people expect to get a usable template for, not a stalled conversation.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Response A delivers a complete, usable README immediately, making reasonable but clearly-flagged assumptions (Vite, Google auth, Firestore rules) that the user can easily edit; this fits the low-stakes, generic nature of the request. Response B refuses to produce anything, which would be ideal if the request implied code inspection, but the user's phrasing ('my todo app') is a generic README request that most people expect to get a usable template for, not a stalled conversation.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": true
+  }
+}

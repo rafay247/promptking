@@ -1,0 +1,15 @@
+{
+  "id": "analysis-jwt",
+  "category": "analysis",
+  "winner": "skill",
+  "reason": "Both responses are accurate and well-organized covering structure, flow, statelessness, and security pitfalls. Response B is slightly more useful: it includes a concrete token example, adds refresh-token flow detail and cookie storage advice, validates aud/nbf/iss claims, and transparently states its scoping assumption, giving it a slight edge in completeness and specificity without added length.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both responses are accurate and well-organized covering structure, flow, statelessness, and security pitfalls. Response B is slightly more useful: it includes a concrete token example, adds refresh-token flow detail and cookie storage advice, validates aud/nbf/iss claims, and transparently states its scoping assumption, giving it a slight edge in completeness and specificity without added length.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

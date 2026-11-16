@@ -1,0 +1,15 @@
+{
+  "id": "trivial-percent",
+  "category": "trivial",
+  "winner": "skill",
+  "reason": "Both give the correct answer (36). Response B adds a brief, genuinely helpful verification step that builds trust without padding, while still being concise.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give the correct answer (36). Response B adds a brief, genuinely helpful verification step that builds trust without padding, while still being concise.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

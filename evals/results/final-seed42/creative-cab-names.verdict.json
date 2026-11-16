@@ -1,0 +1,15 @@
+{
+  "id": "creative-cab-names",
+  "category": "creative",
+  "winner": "baseline",
+  "reason": "Both give organized name lists with next steps, but A is better fit for an open-ended 'give me ideas' request: more options, varied categories, no overconfident single pick, and offers to narrow down. B pads with an opinionated 'Pick' and unverified claims ('available-sounding', 'app-store native') presented as fact, and both A and B correctly flag Hailo's trademark history but B overstates specificity without real verification.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give organized name lists with next steps, but A is better fit for an open-ended 'give me ideas' request: more options, varied categories, no overconfident single pick, and offers to narrow down. B pads with an opinionated 'Pick' and unverified claims ('available-sounding', 'app-store native') presented as fact, and both A and B correctly flag Hailo's trademark history but B overstates specificity without real verification.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

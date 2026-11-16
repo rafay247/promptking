@@ -143,3 +143,10 @@ Professional open-source README:
 - The exact invocation name of a plugin-namespaced skill (`/promptking` vs `/promptking:promptking`) and how to keep `/promptking` working for both plugin and manual installs.
 - The current hook output format for `UserPromptSubmit` additional context.
 - How to cleanly disable the skill for baseline eval runs in headless mode.
+
+## 10. Changes made during implementation
+
+- **No `references/` folder.** Reference files live outside the user's project directory, so Claude Code asked for read permission in every session, and headless runs could not read them at all (round 1 of the evals ran on `SKILL.md` alone for this reason). The domain standards and brief checklist are folded into a single `SKILL.md` (~1,500 words, loaded only when PromptKing runs).
+- **Always-on flag** lives at `${XDG_CONFIG_HOME:-~/.config}/promptking/always-on`, because Claude Code guards `~/.claude` as a sensitive path.
+- **Eval runner** blocks file-writing tools (`--disallowedTools=Write,Edit,NotebookEdit`) so headless answers come back inline instead of stalling on permission prompts.
+- **Final results** come from two full runs of the same skill version (seeds 7 and 42), reported together.

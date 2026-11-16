@@ -1,0 +1,15 @@
+{
+  "id": "ambiguous-proposal",
+  "category": "ambiguous",
+  "winner": "tie",
+  "reason": "Both correctly recognize the request is too vague to act on and ask clarifying questions rather than guessing. Response B is tighter, offers concrete default assumptions to speed up the next turn, and ends with an actionable invitation, while A is slightly more verbose with four separate questions but is equally reasonable.",
+  "skill_was": "B",
+  "skill_asked": true,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both correctly recognize the request is too vague to act on and ask clarifying questions rather than guessing. Response B is tighter, offers concrete default assumptions to speed up the next turn, and ends with an actionable invitation, while A is slightly more verbose with four separate questions but is equally reasonable.",
+    "winner": "tie",
+    "a_asks_before_answering": true,
+    "b_asks_before_answering": true
+  }
+}

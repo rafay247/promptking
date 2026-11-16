@@ -1,0 +1,15 @@
+{
+  "id": "creative-landing-copy",
+  "category": "creative",
+  "winner": "baseline",
+  "reason": "Both give solid, usable headline/copy options with similar structure (ATS focus, how-it-works, proof, CTA). B offers three distinct headline angles, cleaner feature callouts, and a more natural offer to refine further without blocking delivery, giving slightly more usable variety; A includes a useful freemium assumption note but only one core headline plus two throwaway alternatives. Both deliver fully rather than stalling on clarification.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give solid, usable headline/copy options with similar structure (ATS focus, how-it-works, proof, CTA). B offers three distinct headline angles, cleaner feature callouts, and a more natural offer to refine further without blocking delivery, giving slightly more usable variety; A includes a useful freemium assumption note but only one core headline plus two throwaway alternatives. Both deliver fully rather than stalling on clarification.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

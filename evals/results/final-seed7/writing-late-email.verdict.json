@@ -1,0 +1,15 @@
+{
+  "id": "writing-late-email",
+  "category": "writing",
+  "winner": "tie",
+  "reason": "Both are nearly identical generic templates with placeholders; A has slightly more texture (acknowledges fault, offers interim deliverable, pushes for a firm new date) while B is a bit more structured with bullet mitigation steps and explicitly offers to adjust tone/length. Neither asks for clarification, both deliver usable drafts, so it's essentially a wash with B having a marginal edge in flexibility framing and A in emotional tone/ownership.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both are nearly identical generic templates with placeholders; A has slightly more texture (acknowledges fault, offers interim deliverable, pushes for a firm new date) while B is a bit more structured with bullet mitigation steps and explicitly offers to adjust tone/length. Neither asks for clarification, both deliver usable drafts, so it's essentially a wash with B having a marginal edge in flexibility framing and A in emotional tone/ownership.",
+    "winner": "tie",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

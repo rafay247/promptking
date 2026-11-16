@@ -1,0 +1,15 @@
+{
+  "id": "writing-linkedin-job",
+  "category": "writing",
+  "winner": "skill",
+  "reason": "Both deliver a usable post rather than stalling on the vague request, but B is more specific and complete: it includes placeholders for tech stack, backstory, and a networking CTA, plus explicitly flags what was assumed/placeholder'd so the user knows what to fill in before posting. A is shorter and more generic, and only offers to tailor it in a follow-up rather than proactively structuring it for easy customization.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both deliver a usable post rather than stalling on the vague request, but B is more specific and complete: it includes placeholders for tech stack, backstory, and a networking CTA, plus explicitly flags what was assumed/placeholder'd so the user knows what to fill in before posting. A is shorter and more generic, and only offers to tailor it in a follow-up rather than proactively structuring it for easy customization.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

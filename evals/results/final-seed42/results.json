@@ -1,0 +1,130 @@
+{
+  "summary": {
+    "cases": 13,
+    "skill": 9,
+    "baseline": 3,
+    "tie": 1,
+    "win_rate": 0.75,
+    "behavior_pass": 13
+  },
+  "rows": [
+    {
+      "id": "code-email-validate",
+      "category": "code",
+      "winner": "skill",
+      "reason": "Both give similar quality regex validators with length checks and caveats about deliverability. Response A's regex is more correct (rejects 'user@example' without TLD and 'user..name@example.com'), and its test suite demonstrates correctness explicitly; Response B's simpler regex would actually pass 'a@b' as true in its own example comment is wrong since '[^\\s@]+\\.[^\\s@]+' requires a dot after @, but B's domain label check could mishandle edge cases less thoroughly than A's dedicated consecutive-dot and no-TLD checks. A also adds practical guidance on native HTML validation.",
+      "skill_was": "A",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "code-slow-api",
+      "category": "code",
+      "winner": "skill",
+      "reason": "Both correctly diagnose the N+1 problem and give equivalent ORM fixes across Sequelize/Prisma/raw SQL, plus index and pagination advice. B is more useful because it shows the actual before/after broken code pattern (helping the user recognize their bug), gives concrete diagnostic steps (query logging, timing with real numbers), and a specific CREATE INDEX command, while A spends more effort noting the empty directory and is otherwise comparable but slightly less actionable.",
+      "skill_was": "B",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "code-pg-backup",
+      "category": "code",
+      "winner": "skill",
+      "reason": "Both scripts are solid, but B is more robust (locking via flock, ERR trap, custom-format dump enabling parallel/selective restore, better logging) and its reply is self-contained with restore and off-site backup guidance included directly rather than offered as a follow-up. A's response adds little value by writing to an inaccessible scratchpad path first and requires an extra round-trip for restore/off-site info the user will likely want.",
+      "skill_was": "B",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "writing-linkedin-job",
+      "category": "writing",
+      "winner": "baseline",
+      "reason": "Both give usable draft posts, but B's bracketed placeholders are extensive and unfilled (company, role, tech stack, culture detail, dates) making it less immediately usable, while A delivers a complete, ready-to-post draft and offers to customize further. A is more fitting for a simple request without over-engineering with too many unfilled placeholders.",
+      "skill_was": "B",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "writing-late-email",
+      "category": "writing",
+      "winner": "skill",
+      "reason": "Both produce nearly identical placeholder-filled templates, but A includes slightly more structured guidance (explicit note on what's done, mitigation framing) and an 'assumed' caveat flagging tone adjustments for VIP/repeat delays, adding marginal value. B's extra preamble and closing question are mostly filler that restates the obvious (it can't send the email itself) without adding substance. The core deliverable is comparable, making this close to a tie leaning slightly toward A for the added practical framing.",
+      "skill_was": "A",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "writing-readme",
+      "category": "writing",
+      "winner": "skill",
+      "reason": "Response B correctly notices the working directory is empty and could offer a tailored README, but the user's request is clearly actionable as-is (a generic React+Firebase todo README is a standard, well-understood deliverable), so stopping to ask is unnecessary friction. Response A just delivers a solid, well-structured, accurate README with sensible assumptions clearly flagged, which better serves the actual request.",
+      "skill_was": "A",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "analysis-pg-vs-mongo",
+      "category": "analysis",
+      "winner": "tie",
+      "reason": "Both give nearly identical substantive advice (default to Postgres, use jsonb, MongoDB only for true document use-cases), but B adds a brief clarifying question at the end while still delivering a complete actionable answer, and is more appropriately concise for a one-line question. A is more thorough but padded with an unnecessary 'Assumed' disclaimer and slightly more verbose than the question warrants.",
+      "skill_was": "A",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "analysis-jwt",
+      "category": "analysis",
+      "winner": "skill",
+      "reason": "Both responses are accurate and well-structured, covering structure, flow, and pitfalls similarly. Response B is slightly more precise and practitioner-focused (e.g., cookie storage advice, validating iss/aud) and ends efficiently without an unnecessary offer, while A pads with a trailing offer for code; it's a close call but B is marginally tighter and more actionable.",
+      "skill_was": "B",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "creative-cab-names",
+      "category": "creative",
+      "winner": "baseline",
+      "reason": "Both give organized name lists with next steps, but A is better fit for an open-ended 'give me ideas' request: more options, varied categories, no overconfident single pick, and offers to narrow down. B pads with an opinionated 'Pick' and unverified claims ('available-sounding', 'app-store native') presented as fact, and both A and B correctly flag Hailo's trademark history but B overstates specificity without real verification.",
+      "skill_was": "B",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "creative-landing-copy",
+      "category": "creative",
+      "winner": "baseline",
+      "reason": "Both deliver similar quality copy without unnecessary clarifying questions. Response B is slightly more complete (full page flow including problem/agitation, feature highlights, job-match scoring, cover letter mention) and ends with a useful offer to adapt tone/audience or build it as an artifact, while response A includes a slightly odd 'Assumed audience' note that feels less natural but is still useful. Both are close in quality; B edges out for comprehensiveness and polish.",
+      "skill_was": "A",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "prompt-meeting-summary",
+      "category": "prompt",
+      "winner": "skill",
+      "reason": "Both deliver nearly identical usable prompts with the same structure (overview, discussion points, decisions, action items, open questions) and similar safeguards against inventing details. Response A is slightly more polished \u2014 it includes a brief rationale/guideline section for the AI persona, explicit anti-hallucination instruction with an example, and a one-line note on the assumption made about meeting-type generality, which adds marginal value without much bloat. Response B is more concise and equally functional but slightly less detailed in its guardrails.",
+      "skill_was": "A",
+      "skill_asked": false,
+      "behavior_failures": []
+    },
+    {
+      "id": "ambiguous-proposal",
+      "category": "ambiguous",
+      "winner": "skill",
+      "reason": "Both correctly decline to guess and ask clarifying questions, which is appropriate given the extremely vague request. Response A is more concise, offers sensible defaults to reduce friction, and invites rough input to proceed quickly, while Response B is more thorough but slightly more verbose with less actionable defaulting.",
+      "skill_was": "A",
+      "skill_asked": true,
+      "behavior_failures": []
+    },
+    {
+      "id": "trivial-percent",
+      "category": "trivial",
+      "winner": "skill",
+      "reason": "Both give the correct answer (36). Response B adds a brief, genuinely helpful verification step that builds trust without padding, while still being concise.",
+      "skill_was": "B",
+      "skill_asked": false,
+      "behavior_failures": []
+    }
+  ],
+  "errors": []
+}

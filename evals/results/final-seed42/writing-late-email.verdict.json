@@ -1,0 +1,15 @@
+{
+  "id": "writing-late-email",
+  "category": "writing",
+  "winner": "skill",
+  "reason": "Both produce nearly identical placeholder-filled templates, but A includes slightly more structured guidance (explicit note on what's done, mitigation framing) and an 'assumed' caveat flagging tone adjustments for VIP/repeat delays, adding marginal value. B's extra preamble and closing question are mostly filler that restates the obvious (it can't send the email itself) without adding substance. The core deliverable is comparable, making this close to a tie leaning slightly toward A for the added practical framing.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both produce nearly identical placeholder-filled templates, but A includes slightly more structured guidance (explicit note on what's done, mitigation framing) and an 'assumed' caveat flagging tone adjustments for VIP/repeat delays, adding marginal value. B's extra preamble and closing question are mostly filler that restates the obvious (it can't send the email itself) without adding substance. The core deliverable is comparable, making this close to a tie leaning slightly toward A for the added practical framing.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

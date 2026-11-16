@@ -1,0 +1,15 @@
+{
+  "id": "trivial-percent",
+  "category": "trivial",
+  "winner": "tie",
+  "reason": "Both give the correct answer (36). Response A adds a quick mental-math breakdown that's accurate and mildly useful but unnecessary for such a trivial query; Response B is perfectly sufficient and better matches the triviality of the question. Given the simplicity of the request, B's brevity is a better fit, though A isn't harmful either\u2014this is close to a tie with a slight edge to B for fit.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give the correct answer (36). Response A adds a quick mental-math breakdown that's accurate and mildly useful but unnecessary for such a trivial query; Response B is perfectly sufficient and better matches the triviality of the question. Given the simplicity of the request, B's brevity is a better fit, though A isn't harmful either\u2014this is close to a tie with a slight edge to B for fit.",
+    "winner": "tie",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

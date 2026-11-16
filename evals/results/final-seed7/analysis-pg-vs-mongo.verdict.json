@@ -1,0 +1,15 @@
+{
+  "id": "analysis-pg-vs-mongo",
+  "category": "analysis",
+  "winner": "skill",
+  "reason": "Both give similar correct guidance, but response A's extra depth (common-mistake pattern, migration pitfalls, JSONB middle ground) adds real value without being asked for more info, while response B appropriately recognizes the question is underspecified and asks a sharp clarifying question before committing to generic advice. Given the request is genuinely too vague to tailor advice without knowing the data shape, B's brief answer-plus-question is arguably better judgment, but A's answer is still actionable and more substantively useful on its own.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give similar correct guidance, but response A's extra depth (common-mistake pattern, migration pitfalls, JSONB middle ground) adds real value without being asked for more info, while response B appropriately recognizes the question is underspecified and asks a sharp clarifying question before committing to generic advice. Given the request is genuinely too vague to tailor advice without knowing the data shape, B's brief answer-plus-question is arguably better judgment, but A's answer is still actionable and more substantively useful on its own.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": true
+  }
+}

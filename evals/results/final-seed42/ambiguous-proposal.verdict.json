@@ -1,0 +1,15 @@
+{
+  "id": "ambiguous-proposal",
+  "category": "ambiguous",
+  "winner": "skill",
+  "reason": "Both correctly decline to guess and ask clarifying questions, which is appropriate given the extremely vague request. Response A is more concise, offers sensible defaults to reduce friction, and invites rough input to proceed quickly, while Response B is more thorough but slightly more verbose with less actionable defaulting.",
+  "skill_was": "A",
+  "skill_asked": true,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both correctly decline to guess and ask clarifying questions, which is appropriate given the extremely vague request. Response A is more concise, offers sensible defaults to reduce friction, and invites rough input to proceed quickly, while Response B is more thorough but slightly more verbose with less actionable defaulting.",
+    "winner": "A",
+    "a_asks_before_answering": true,
+    "b_asks_before_answering": true
+  }
+}

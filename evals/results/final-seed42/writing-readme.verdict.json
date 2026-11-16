@@ -1,0 +1,15 @@
+{
+  "id": "writing-readme",
+  "category": "writing",
+  "winner": "skill",
+  "reason": "Response B correctly notices the working directory is empty and could offer a tailored README, but the user's request is clearly actionable as-is (a generic React+Firebase todo README is a standard, well-understood deliverable), so stopping to ask is unnecessary friction. Response A just delivers a solid, well-structured, accurate README with sensible assumptions clearly flagged, which better serves the actual request.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Response B correctly notices the working directory is empty and could offer a tailored README, but the user's request is clearly actionable as-is (a generic React+Firebase todo README is a standard, well-understood deliverable), so stopping to ask is unnecessary friction. Response A just delivers a solid, well-structured, accurate README with sensible assumptions clearly flagged, which better serves the actual request.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": true
+  }
+}

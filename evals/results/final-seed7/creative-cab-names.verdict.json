@@ -1,0 +1,15 @@
+{
+  "id": "creative-cab-names",
+  "category": "creative",
+  "winner": "skill",
+  "reason": "Both give solid name lists with similar categories and actionability tips, but B is more useful: it organizes names with brief rationale per entry, flags a real trademark conflict risk (Zippo), gives a clear recommended pick with reasoning, and states its assumptions explicitly. A's offer to narrow down is reasonable but adds less value than B's built-in shortlist and reasoning.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give solid name lists with similar categories and actionability tips, but B is more useful: it organizes names with brief rationale per entry, flags a real trademark conflict risk (Zippo), gives a clear recommended pick with reasoning, and states its assumptions explicitly. A's offer to narrow down is reasonable but adds less value than B's built-in shortlist and reasoning.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

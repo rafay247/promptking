@@ -1,0 +1,15 @@
+{
+  "id": "prompt-meeting-summary",
+  "category": "prompt",
+  "winner": "skill",
+  "reason": "Both deliver a usable prompt rather than asking clarifying questions, but Response B's prompt is more robust: it explicitly bans inferring facts/names/dates, handles sparse-notes edge cases, uses a structured table for action items, and states its formatting assumption transparently. Response A's prompt is solid and more concise, but B's extra guardrails (anti-hallucination rules, fallback text for missing data) make it meaningfully more reliable for real messy notes without being bloated.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both deliver a usable prompt rather than asking clarifying questions, but Response B's prompt is more robust: it explicitly bans inferring facts/names/dates, handles sparse-notes edge cases, uses a structured table for action items, and states its formatting assumption transparently. Response A's prompt is solid and more concise, but B's extra guardrails (anti-hallucination rules, fallback text for missing data) make it meaningfully more reliable for real messy notes without being bloated.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

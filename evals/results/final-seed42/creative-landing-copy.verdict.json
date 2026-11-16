@@ -1,0 +1,15 @@
+{
+  "id": "creative-landing-copy",
+  "category": "creative",
+  "winner": "baseline",
+  "reason": "Both deliver similar quality copy without unnecessary clarifying questions. Response B is slightly more complete (full page flow including problem/agitation, feature highlights, job-match scoring, cover letter mention) and ends with a useful offer to adapt tone/audience or build it as an artifact, while response A includes a slightly odd 'Assumed audience' note that feels less natural but is still useful. Both are close in quality; B edges out for comprehensiveness and polish.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both deliver similar quality copy without unnecessary clarifying questions. Response B is slightly more complete (full page flow including problem/agitation, feature highlights, job-match scoring, cover letter mention) and ends with a useful offer to adapt tone/audience or build it as an artifact, while response A includes a slightly odd 'Assumed audience' note that feels less natural but is still useful. Both are close in quality; B edges out for comprehensiveness and polish.",
+    "winner": "B",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

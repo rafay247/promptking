@@ -1,0 +1,15 @@
+{
+  "id": "code-email-validate",
+  "category": "code",
+  "winner": "skill",
+  "reason": "Both give a working regex-based validator with correct caveats about RFC 5322 complexity and recommending validator.js, but A goes further with length limits per RFC 5321, trimming logic, type checking details, a thorough test suite demonstrating correctness, and a more robust regex (WHATWG spec pattern) that catches more edge cases (double @, leading dot domains) than B's overly permissive regex. B is more concise and still correct for typical use, but A delivers more verified, production-ready value without unnecessary padding.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give a working regex-based validator with correct caveats about RFC 5322 complexity and recommending validator.js, but A goes further with length limits per RFC 5321, trimming logic, type checking details, a thorough test suite demonstrating correctness, and a more robust regex (WHATWG spec pattern) that catches more edge cases (double @, leading dot domains) than B's overly permissive regex. B is more concise and still correct for typical use, but A delivers more verified, production-ready value without unnecessary padding.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

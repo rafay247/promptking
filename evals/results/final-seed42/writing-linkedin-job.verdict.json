@@ -1,0 +1,15 @@
+{
+  "id": "writing-linkedin-job",
+  "category": "writing",
+  "winner": "baseline",
+  "reason": "Both give usable draft posts, but B's bracketed placeholders are extensive and unfilled (company, role, tech stack, culture detail, dates) making it less immediately usable, while A delivers a complete, ready-to-post draft and offers to customize further. A is more fitting for a simple request without over-engineering with too many unfilled placeholders.",
+  "skill_was": "B",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both give usable draft posts, but B's bracketed placeholders are extensive and unfilled (company, role, tech stack, culture detail, dates) making it less immediately usable, while A delivers a complete, ready-to-post draft and offers to customize further. A is more fitting for a simple request without over-engineering with too many unfilled placeholders.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}

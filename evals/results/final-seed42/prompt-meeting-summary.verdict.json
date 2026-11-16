@@ -1,0 +1,15 @@
+{
+  "id": "prompt-meeting-summary",
+  "category": "prompt",
+  "winner": "skill",
+  "reason": "Both deliver nearly identical usable prompts with the same structure (overview, discussion points, decisions, action items, open questions) and similar safeguards against inventing details. Response A is slightly more polished \u2014 it includes a brief rationale/guideline section for the AI persona, explicit anti-hallucination instruction with an example, and a one-line note on the assumption made about meeting-type generality, which adds marginal value without much bloat. Response B is more concise and equally functional but slightly less detailed in its guardrails.",
+  "skill_was": "A",
+  "skill_asked": false,
+  "behavior_failures": [],
+  "raw": {
+    "reason": "Both deliver nearly identical usable prompts with the same structure (overview, discussion points, decisions, action items, open questions) and similar safeguards against inventing details. Response A is slightly more polished \u2014 it includes a brief rationale/guideline section for the AI persona, explicit anti-hallucination instruction with an example, and a one-line note on the assumption made about meeting-type generality, which adds marginal value without much bloat. Response B is more concise and equally functional but slightly less detailed in its guardrails.",
+    "winner": "A",
+    "a_asks_before_answering": false,
+    "b_asks_before_answering": false
+  }
+}
