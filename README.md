@@ -14,6 +14,10 @@ PromptKing is a Claude Code plugin that upgrades your request *behind the scenes
 
 You never have to write, read or copy-paste a "better prompt". You just get a better answer.
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Side-by-side demo: plain Claude Code asks clarifying questions, while Claude Code with PromptKing delivers a complete README with a one-line list of assumptions" width="900">
+</p>
+
 ---
 
 ## Before / after
@@ -235,6 +239,7 @@ promptking/
 ├── hooks/                 always-on UserPromptSubmit hook
 ├── evals/                 test cases, judge rubric, runner, results
 ├── tests/                 hook tests
+├── assets/                demo GIF
 └── docs/                  research notes, baseline observations, design spec and plan
 ```
 
