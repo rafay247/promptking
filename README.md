@@ -102,14 +102,23 @@ It then applies built-in standards for the type of result: **code**, **writing**
 
 ### Option 1: Plugin marketplace (recommended)
 
-In Claude Code:
+From any terminal:
+
+```bash
+claude plugin marketplace add rafay247/promptking
+claude plugin install promptking@promptking
+```
+
+Or inside the Claude Code **terminal app**, run these **one at a time** (paste the first, press Enter, wait for it to finish, then the second):
 
 ```
 /plugin marketplace add rafay247/promptking
 /plugin install promptking@promptking
 ```
 
-This installs the skill **and** the always-on hook.
+This installs the skill **and** the always-on hook. Restart Claude Code afterwards; `/promptking` then also works in the VS Code and JetBrains extensions.
+
+> `/plugin` commands run in the terminal version of Claude Code, not in the IDE extension's chat panel. If you see "/plugin isn't available in this environment", use the `claude plugin …` commands above in a terminal instead.
 
 ### Option 2: Manual
 
