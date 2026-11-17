@@ -18,36 +18,58 @@ You never have to write, read or copy-paste a "better prompt". You just get a be
 
 ## Before / after
 
-Real output from the [eval suite](#benchmarks), same model, same request. Excerpts are trimmed.
+Real output from the [eval suite](#benchmarks): same model, same request, one run with PromptKing and one without.
 
-> **Request:** `write readme for my todo app made with react and firebase`
+**Request**
 
-<table>
-<tr><th width="50%">Without PromptKing</th><th width="50%">With PromptKing</th></tr>
-<tr valign="top"><td>
+```text
+write readme for my todo app made with react and firebase
+```
 
-> Your working directory is empty, so I don't have any project files to base the README on. A couple of options:
->
-> 1. If your project lives elsewhere, tell me the path…
-> 2. If you just want a solid generic README… quickly confirm: what Firebase services does it use (Auth? Firestore vs Realtime Database? Hosting?), and any notable features…
->
-> Which would you like?
+**❌ Without PromptKing**: stalls and asks instead of delivering *(trimmed)*
 
-</td><td>
+```text
+Your working directory is empty, so I don't have any project files to base
+the README on. A couple of options:
 
-> # Todo App
-> A fast, minimal todo list app built with React and Firebase…
->
-> ## Features · Tech Stack · Quick Start · Configure Firebase · Deploy …
->
-> *(complete README)*
->
-> `Assumed: Vite as the build tool, Firestore for storage, Email/Password auth, and MIT license — swap these if your stack differs.`
+1. If your project lives elsewhere, tell me the path and I'll read it and
+   write a tailored README.
+2. If you just want a solid generic README for a React + Firebase todo app,
+   I can write one now — but then quickly confirm: what Firebase services
+   does it use (Auth? Firestore vs Realtime Database? Hosting?), and any
+   notable features?
 
-</td></tr>
-</table>
+Which would you like?
+```
 
-**Judge's verdict:** *"The request is clearly actionable as-is… stopping to ask is unnecessary friction. [PromptKing] just delivers a solid, well-structured, accurate README with sensible assumptions clearly flagged."*
+**✅ With PromptKing**: delivers the complete README and states its assumptions in one line *(trimmed)*
+
+```markdown
+# Todo App
+
+A fast, minimal todo list app built with React and Firebase — create,
+complete, and organize tasks with real-time sync across devices.
+
+## Features
+- ✅ Create, edit, complete, and delete todos
+- 🔄 Real-time sync via Firestore (changes appear instantly across tabs/devices)
+- 🔐 User authentication (sign up / log in) with Firebase Auth
+- 🗂️ Per-user task lists — each account only sees its own todos
+
+## Tech Stack
+- **React** (Vite)
+- **Firebase** — Firestore (database) + Firebase Auth (authentication)
+
+## Quick Start
+...  Prerequisites · Install · Configure Firebase · Run · Deploy  ...
+```
+
+```text
+Assumed: Vite as the build tool, Firestore for storage, Email/Password auth,
+and MIT license — swap these if your stack differs.
+```
+
+> **Blind judge's verdict:** *"The request is clearly actionable as-is… stopping to ask is unnecessary friction. [PromptKing] just delivers a solid, well-structured, accurate README with sensible assumptions clearly flagged."*
 
 ---
 
@@ -55,14 +77,16 @@ Real output from the [eval suite](#benchmarks), same model, same request. Excerp
 
 ```mermaid
 flowchart LR
-    A[Rough request] --> B[Decode<br/><sub>real goal vs. literal words</sub>]
-    B --> C[Brief<br/><sub>expert lens, quality bar,<br/>gaps, pitfalls</sub>]
-    C --> D[Execute<br/><sub>using domain standards</sub>]
-    D --> E[Verify<br/><sub>check against the bar,<br/>fix before replying</sub>]
-    E --> F[Deliver<br/><sub>result only</sub>]
+    R([Your request]) --> D[Decode] --> B[Brief] --> E[Execute] --> V[Verify] --> O([Result])
 ```
 
-For every request, PromptKing silently answers seven questions: *What is the real goal? What exact deliverable serves it? What would the best practitioner include? What does the context already tell us? What does "excellent" look like here? What's missing, and what's the sensible default? Where does this kind of task usually go wrong?*
+| Step | What happens (silently) |
+|---|---|
+| **Decode** | Separates what you typed from what you're actually trying to get done. |
+| **Brief** | Builds an expert brief: the real goal, the right deliverable, what a top practitioner would include, the quality bar, sensible defaults for gaps, and the usual pitfalls. |
+| **Execute** | Produces the deliverable using built-in standards for its domain. |
+| **Verify** | Checks the draft against the quality bar and fixes what falls short. |
+| **Result** | You get the finished work, plus a one-line `Assumed:` note when a default matters. |
 
 It then applies built-in standards for the type of result: **code**, **writing**, **analysis and decisions**, **creative work**, and **prompts for other AIs**.
 
