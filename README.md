@@ -136,6 +136,22 @@ cd skills && zip -r promptking.zip promptking
 
 ---
 
+## Use with other AI tools
+
+PromptKing's core is plain instructions, so it also works outside Claude. [`portable/PROMPTKING.md`](portable/PROMPTKING.md) is a model-neutral version: same brief, deliver-or-ask rule, response shape and domain standards, with the Claude Code-specific parts removed. It is about 5,000 characters, so it fits every tool below. Once added, it applies to **every message** in that GPT, Gem or project; no slash command needed.
+
+| Tool | Where to paste `portable/PROMPTKING.md` |
+|---|---|
+| **ChatGPT** | *Explore GPTs → Create → Configure → Instructions* (a Custom GPT), or a **Project**'s instructions |
+| **Gemini** | *Gems → New Gem → Instructions* |
+| **Claude.ai Projects** | Project → *Set project instructions* (alternative to uploading the skill) |
+| **Codex CLI, Gemini CLI, Cursor and other coding agents** | Add it to the agent's instructions file (for example `AGENTS.md`, `GEMINI.md`, or a Cursor rule). Agents that support the `SKILL.md` skill format can load `skills/promptking/` directly; check your tool's docs for its skills folder. |
+| **Any LLM API** | Use it as the system prompt |
+
+> **Tested on Claude only.** The [benchmarks](#benchmarks) were run on Claude. The portable version was sanity-checked as a plain system prompt, but its quality on GPT, Gemini and other models has not been measured yet. If you try it, [open an issue](https://github.com/rafay247/promptking/issues) with what you saw.
+
+---
+
 ## Usage
 
 ```
@@ -239,6 +255,7 @@ promptking/
 ├── hooks/                 always-on UserPromptSubmit hook
 ├── evals/                 test cases, judge rubric, runner, results
 ├── tests/                 hook tests
+├── portable/              PROMPTKING.md for ChatGPT, Gemini, other agents and APIs
 ├── assets/                demo GIF
 └── docs/                  research notes, baseline observations, design spec and plan
 ```
@@ -255,6 +272,9 @@ cd evals && python3 -m unittest test_run
 
 # hook tests
 sh tests/test_hook.sh
+
+# portable prompt stays under 8,000 characters and tool-neutral
+sh tests/test_portable.sh
 
 # add a case to evals/cases.json, then run just that case
 python3 evals/run.py --cases your-case-id
